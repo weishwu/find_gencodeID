@@ -15,17 +15,17 @@ hgnc=queryTabs[[3]]
 g_1=merge(g,gtf,by.x='query_name0',by.y='gene_name',all.x=T)
 g_11=g_1[!is.na(g_1[,3]),]
 g_10=g_1[is.na(g_1[,3]),]
-print(paste("Find gene names within Gencode GTF: ",nrow(g_11),sep=""))
+print(paste("Found gene names within Gencode GTF: ",nrow(g_11),sep=""))
 
 g_2=merge(g_10[,1:2],ncbi,by.x='query_name0',by.y='query_name',all.x=T)
 g_21=g_2[!is.na(g_2[,3]),]
 g_20=g_2[is.na(g_2[,3]),]
-print(paste("Find remaining gene names within NCBI records: ",nrow(g_21),sep=""))
+print(paste("Found remaining gene names within NCBI records: ",nrow(g_21),sep=""))
 
 g_3=merge(g_20[,1:2],hgnc,by.x='query_name0',by.y='query_name',all.x=T)
 g_31=g_3[!is.na(g_3[,3]),]
 g_30=g_3[is.na(g_3[,3]),]
-print(paste("Find remaining gene names within HGNC aliases: ",nrow(g_31),sep=""))
+print(paste("Found remaining gene names within HGNC aliases: ",nrow(g_31),sep=""))
 
 all=rbind(g_30,g_11,g_21,g_31)
 all[is.na(all)]='.'
