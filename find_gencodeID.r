@@ -5,7 +5,7 @@ else {d=matrix(as.character(input),,1)}
 print(paste("Read in gene names: ",nrow(d),sep=""))
 g=unique(d)
 print(paste("Unique gene names: ",nrow(g),sep=""))
-g[,2]=paste(';',as.character(g[,1]),';',sep='')
+g=cbind(g,paste(';',as.character(g[,1]),';',sep=''))
 colnames(g)=c('query_name','query_name0')
 
 #load('queryTabs.RData')
