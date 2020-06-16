@@ -7,7 +7,7 @@ eval(parse(text = script))
 ```
 
 ## Example run
-"ENSG_Missing.txt" is a file that contains gene names in the first column, one name per line.
+- "ENSG_Missing.txt" is a file that contains gene names in the first column, one name per line.
 ```
 hits=find_gencodeID("ENSG_Missing.txt")
 ```
