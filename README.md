@@ -19,7 +19,7 @@ eval(parse(text = script))
 ```
 hits=find_gencodeID("ENSG_Missing.txt")
 ```
-- Read input from the variable name of a vector of characters. The first column of the matrix is the gene names, one per row.
+- Read input from the variable name of a vector of characters.
 ```
 hits=find_gencodeID(ENSG_Missing)
 ```
