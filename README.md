@@ -19,7 +19,7 @@ hits=find_gencodeID("ENSG_Missing.txt")
 
 ## Read below only if data needs to be re-created
 - Merge NCBI and HGNC records with Gencode GTF to find the unique matches (each NCBI/HGNC record can only be linked with one gencode ID; each gene name can only be linked with on Gencode ID).
-- Requried inputs: gencode.v34.annotation.gtf.zip, NCBI_genes.txt.zip, HGNC_gene_aliases.txt.zip
+- Requried inputs: gencode.v34.annotation.gtf.zip, NCBI_genes.txt.zip, HGNC_gene_aliases.txt.zip (downloaded from the links listed above)
 ```
 python gencodeID_queryTables.py gencode.v34.annotation.gtf.zip
 ```
