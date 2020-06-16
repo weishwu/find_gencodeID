@@ -15,9 +15,13 @@ eval(parse(text = script))
 ```
 
 ## Example run
-- "ENSG_Missing.txt" is a file that contains gene names in the first column, one name per line.
+- Read input from a file name which has to end with ".txt". The file contains gene names in the first column, one name per line.
 ```
 hits=find_gencodeID("ENSG_Missing.txt")
+```
+- Read input from the variable name of a vector of characters. The first column of the matrix is the gene names, one per row.
+```
+hits=find_gencodeID(ENSG_Missing)
 ```
 
 ## Read below only if data needs to be re-created
