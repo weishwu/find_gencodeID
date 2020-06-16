@@ -29,7 +29,7 @@ print(paste("Find remaining gene names within HGNC aliases: ",nrow(g_31),sep="")
 
 all=rbind(g_30,g_11,g_21,g_31)
 all[is.na(all)]='.'
-print(paste("Remaining gene names without hits: ",nrow(all[all[,2]=='.',]),sep=""))
+print(paste("Remaining gene names without hits: ",nrow(all[all[,3]=='.',]),sep=""))
 all[,-1]
 }
 print("Run it as: hits=find_gencodeID(fn) # fn is the name of the file that contains the gene names in the 1st column")
