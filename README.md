@@ -3,7 +3,7 @@ This repo contains scripts and data files that find Gencode gene IDs with given 
 - NCBI gene records: https://www.ncbi.nlm.nih.gov/gene/?term=homo+sapiens (downloaded in Feb 2020)
 - HGNC gene aliases: https://www.genenames.org/download/custom/ (Downloaded in June 2020)
 
-**Note: if a gene name matches more than one Gencode ID it will be reported as no hit.**
+**Note: if a gene name is found to be linked with more than one Gencode ID it will be reported as no hit.**
 
 ## Load function and data in R
 ```
