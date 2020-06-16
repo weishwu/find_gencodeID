@@ -1,4 +1,4 @@
-This repo contains scripts and data files that find Gencode gene IDs with given gene names. It relies on 3 resources to find the hits in the following priority order:
+This repo contains scripts and data files that find Gencode gene IDs with given gene names. It relies on 3 resources to find the hits, and the search is in the following priority order:
 - Gencode GTF: https://www.gencodegenes.org/human/
 - NCBI gene records: https://www.ncbi.nlm.nih.gov/gene/?term=homo+sapiens
 - HGNC gene aliases: https://www.genenames.org/download/custom/
