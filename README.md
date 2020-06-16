@@ -23,7 +23,7 @@ hits=find_gencodeID("ENSG_Missing.txt")
 ```
 python gencodeID_queryTables.py gencode.v34.annotation.gtf.zip
 ```
-Combine the gene name and ID tables created above into an R object
+- Combine the gene name and ID tables created above into an R object
 ```
 Rscript gencodeID_queryTables.r
 ```
