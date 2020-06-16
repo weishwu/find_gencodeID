@@ -1,6 +1,7 @@
 find_gencodeID=function(input)
 {
-if (grepl('.txt',input)) {d=read.table(input,strip.white=T,blank.lines.skip=T,colClasses="character")[,1,drop=F]}
+input=as.character(input)
+if (length(input)==1 & grepl('.txt',input[1])) {d=read.table(input,strip.white=T,blank.lines.skip=T,colClasses="character")[,1,drop=F]}
 else {d=matrix(as.character(input),,1)}
 print(paste("Read in gene names: ",nrow(d),sep=""))
 g=unique(d)
