@@ -6,7 +6,7 @@ load(url("https://raw.githubusercontent.com/weishwu/find_gencodeID/master/queryT
 eval(parse(text = script))
 ```
 
-## example run
+## Example run
 ```
 hits=find_gencodeID("ENSG_Missing.txt")
 ```
