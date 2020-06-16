@@ -1,3 +1,8 @@
+This repo contains scripts and data files that find Gencode gene IDs with given gene names. It relies on 3 resources to find the hits in the following priority order:
+- 1. Gencode GTF: https://www.gencodegenes.org/human/
+- 2. NCBI gene records: https://www.ncbi.nlm.nih.gov/gene/?term=homo+sapiens
+- 3. HGNC gene aliases: https://www.genenames.org/download/custom/
+
 ## Load function and data in R
 ```
 library(RCurl)
